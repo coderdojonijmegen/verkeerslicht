@@ -1,17 +1,15 @@
 ## Inhoud ##
-# Table of Contents
-- [Table of Contents](#table-of-contents)
-  - [Introductie](#introductie)
-  - [Scratch](#scratch)
-  - [Elektronica voor verkeerslicht](#elektronica-voor-verkeerslicht)
-  - [Breadboard](#breadboard)
-    - [LED](#led)
-    - [Knopje](#knopje)
-    - [Fotocel](#fotocel)
-  - [micro:bit visueel](#microbit-visueel)
-    - [De verbinding testen](#de-verbinding-testen)
-  - [micro:bit Python code](#microbit-python-code)
-  - [Arduino visueel](#arduino-visueel)
+- [Introductie](#introductie)
+- [Scratch](#scratch)
+- [Elektronica voor verkeerslicht](#elektronica-voor-verkeerslicht)
+- [Breadboard](#breadboard)
+  - [LED](#led)
+  - [Knopje](#knopje)
+  - [Fotocel](#fotocel)
+- [micro:bit visueel](#microbit-visueel)
+  - [De verbinding testen](#de-verbinding-testen)
+- [micro:bit Python code](#microbit-python-code)
+- [Arduino visueel](#arduino-visueel)
 - [Arduino code](#arduino-code)
 
 ## Introductie ##
@@ -28,6 +26,9 @@ Bij deze CoderDojo gaan we verkeerslichten maken. Dat kan met:
 Als je met de micro:bit of Arduino aan de slag gaat moet je zelf een circuitje bouwen. Daarvoor hebben we natuurlijk gekleurde LEDjes, en daarnaast ook knopjes en fotocellen waarmee je je verkeerslicht verder kunt uitbreiden.
 
 ## Scratch
+- Ontwerp een verkeerlicht-sprite
+- Laat het licht om de zoveel tijd van kleur veranderen
+- Voeg een sprite toe die het verkeerslicht op rood/groen kan laten springen
 
 ## Elektronica voor verkeerslicht
 
@@ -55,7 +56,11 @@ Net als batterijen hebben LED lampjes een plus en een min. Als je goed kijkt zij
   - Andere browsers:
     - Downloaden -> doel kiezen: "MICROBIT"
     - Als standaardmap voor Downloads ingesteld: kopieer/verplaats vanaf daar
-
+### Een LED laten knipperen
+### Meer LEDs aansluiten
+### Timing van de LEDs
+### De micro:bit knoppen gebruiken
+### De micro:bit lichtsensor gebruiken
 
 ## micro:bit Python code
 - Keuze tussen https://python.microbit.org/v/1.1 en Mu editor?
