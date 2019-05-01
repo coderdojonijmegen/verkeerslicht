@@ -90,12 +90,49 @@ Een voorbeeld van een circuit met led.
 
 Om een arduino visueel te programmeren kunnen we gebruik maken van de mblock5 editor (http://www.mblock.cc/mblock-software/).
 
-Ons eerste programma start met het blok 'Als arduino opstart':
-<img src="img/arduino-block4.png" style="height:75px; display: inline"/>
+Om een verkeerslicht te simuleren beginnen we met 1 led lampje en een arduino. Vervolgens kun je zelf aan de slag om een verkeerslicht in elkaar te zetten.
 
-Vervolgens kunnen we ()
+<h3>1 Led laten knipperen</h3>
 
---
-<img src="img/arduino-block1.png" style="height:150px; display: inline"/>
+<ol>
+  <li>
+    Maak het volgende circuit (met behulp van een breadboard). <br /><img
+      src="./img/led//Arduino_LEDknipper_circuit.png"
+      height="200px"
+    />
+  </li>
+
+  <li>
+    Schakel nu de LED in door de juiste output op <b><i>HOOG</i></b> te zetten.
+  </li>
+  <details>
+    <summary>mBlock code</summary>
+    <img src="./img/arduino-block1.png" height="100px"/>
+  </details>
+  <li>
+    Nu wil je dat de LED daarna ook weer uit gaat.
+    <details>
+      <summary>mBlock code</summary>
+    <img src="./img/arduino-block2.png"  height="100px"/>
+    </details>
+  </li>
+
+  <li>
+    Er zit geen tijd tussen het aan- en uitgaan!
+    <details>
+      <summary>mBlock code</summary>
+    <img src="./img/arduino-block3.png"  height="120px"/>
+    </details>
+  </li>
+
+  <li>
+    Nu wil je dit blijven herhalen.
+    <details>
+      <summary>mBlock code</summary>
+    <img src="./img/arduino-block4.png"  height="150px"/>
+    </details>
+  </li>
+  <li>Nu hebben we 1 led, kun jij een stoplicht maken?</li>
+</ol>
 
 # Arduino code
