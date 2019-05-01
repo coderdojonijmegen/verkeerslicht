@@ -92,13 +92,13 @@ Om een arduino visueel te programmeren kunnen we gebruik maken van de mblock5 ed
 
 Om een verkeerslicht te simuleren beginnen we met 1 led lampje en een arduino. Vervolgens kun je zelf aan de slag om een verkeerslicht in elkaar te zetten.
 
-<h3>1 Led laten knipperen</h3>
+### Een led laten knipperen
 
 <ol>
   <li>
     Maak het volgende circuit (met behulp van een breadboard). <br /><img
-      src="./img/led//Arduino_LEDknipper_circuit.png"
-      height="200px"
+      src="./img/Basic-LED.png"
+      height="250px"
     />
   </li>
 
@@ -133,6 +133,34 @@ Om een verkeerslicht te simuleren beginnen we met 1 led lampje en een arduino. V
     </details>
   </li>
   <li>Nu hebben we 1 led, kun jij een stoplicht maken?</li>
+</ol>
+
+### Een led laten knipperen soor een licht sensor
+
+<ol>
+  <li>
+    Maak het volgende circuit (met behulp van een breadboard). <br /><img
+      src="./img/photocell-arduino.jpg"
+      height="200px"
+    />
+  </li>
+
+  <li>
+    We kunnen nu de waarde van deze licht sensor uitlezen met het blok:
+    <img src="./img/analog-pin.png" height="50px"/>
+
+Let wel op: dit blok moet gecombineerd worden met een functie. Bijvoorbeeld 'groter dan' of 'kleiner dan'.
+
+  <img src="./img/bigger-smaller.png" height="75px"/>
+
+Kun jij nu met de licht sensor een led aan of uit zetten?
+
+  <details>
+    <summary>mBlock code</summary>
+    <img src="./img/compleet.png" height="250px"/>
+  </details>
+  </li>
+  <li>Nu hebben we 1 led, kun jij een stoplicht maken met 3 ledjes en 3 licht sensoren?</li>
 </ol>
 
 # Arduino code
