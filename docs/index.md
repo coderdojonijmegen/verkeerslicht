@@ -1,4 +1,5 @@
-## Inhoud ##
+## Inhoud
+
 - [Introductie](#introductie)
 - [Scratch](#scratch)
 - [Elektronica voor verkeerslicht](#elektronica-voor-verkeerslicht)
@@ -12,7 +13,8 @@
 - [Arduino visueel](#arduino-visueel)
 - [Arduino code](#arduino-code)
 
-## Introductie ##
+## Introductie
+
 Bij deze CoderDojo gaan we verkeerslichten maken. Dat kan met:
 
 - Scratch
@@ -26,6 +28,7 @@ Bij deze CoderDojo gaan we verkeerslichten maken. Dat kan met:
 Als je met de micro:bit of Arduino aan de slag gaat moet je zelf een circuitje bouwen. Daarvoor hebben we natuurlijk gekleurde LEDjes, en daarnaast ook knopjes en fotocellen waarmee je je verkeerslicht verder kunt uitbreiden.
 
 ## Scratch
+
 - Ontwerp een verkeerlicht-sprite
 - Laat het licht om de zoveel tijd van kleur veranderen
 - Voeg een sprite toe die het verkeerslicht op rood/groen kan laten springen
@@ -33,40 +36,131 @@ Als je met de micro:bit of Arduino aan de slag gaat moet je zelf een circuitje b
 ## Elektronica voor verkeerslicht
 
 ## Breadboard
+
 Je kunt een circuit bouwen op een zogenaamd breadboard. Deze zijn er in allerlei soorten en maten. Op dit schema kun je zien welke gaatjes (elektrisch) met elkaar verbonden zijn.
 
 <img src="img/breadboard_verbindingen.png" style="height:400px" />
+
 ### LED
+
 Net als batterijen hebben LED lampjes een plus en een min. Als je goed kijkt zijn de pootjes van de LED's niet even lang: het net iets langere pootje is de plus, de kortere de min.
 
 ### Knopje
 
 ### Fotocel
 
+### Circuit met led
+
+Een voorbeeld van een circuit met led.
+
 ## micro:bit visueel
+
 - Gebruik bij voorkeur de [Google Chrome webbrowser](https://www.google.nl/chrome/)
 - Ga naar [de Makecode editor](makecode.microbit.org)
-- Stel de taal in op Nederlands 
+- Stel de taal in op Nederlands
+
 ### De verbinding testen
+
 - Sluit de micro:bit met de USB kabel aan op de computer
 - Maak een eerste programma: toon het hart-pictogram
-<img src="img/microbit-visueel-1-testprogramma.png" style="height:100px" />
+  <img src="img/microbit-visueel-1-testprogramma.png" style="height:100px" />
 - Download nu het programma naar de micro:bit
   - In Chrome: WebUSB -> tandwiel -> apparaat koppelen -> Downloaden
   - Andere browsers:
     - Downloaden -> doel kiezen: "MICROBIT"
     - Als standaardmap voor Downloads ingesteld: kopieer/verplaats vanaf daar
+
 ### Een LED laten knipperen
+
 ### Meer LEDs aansluiten
+
 ### Timing van de LEDs
+
 ### De micro:bit knoppen gebruiken
+
 ### De micro:bit lichtsensor gebruiken
 
 ## micro:bit Python code
+
 - Keuze tussen https://python.microbit.org/v/1.1 en Mu editor?
 - Maak een eerste programma:
-- 
+-
 
 ## Arduino visueel
+
+Om een arduino visueel te programmeren kunnen we gebruik maken van de mblock5 editor (http://www.mblock.cc/mblock-software/).
+
+Om een verkeerslicht te simuleren beginnen we met 1 led lampje en een arduino. Vervolgens kun je zelf aan de slag om een verkeerslicht in elkaar te zetten.
+
+### Een led laten knipperen
+
+<ol>
+  <li>
+    Maak het volgende circuit (met behulp van een breadboard). <br /><img
+      src="./img/Basic-LED.png"
+      height="250px"
+    />
+  </li>
+
+  <li>
+    Schakel nu de LED in door de juiste output op <b><i>HOOG</i></b> te zetten.
+  </li>
+  <details>
+    <summary>mBlock code</summary>
+    <img src="./img/arduino-block1.png" height="100px"/>
+  </details>
+  <li>
+    Nu wil je dat de LED daarna ook weer uit gaat.
+    <details>
+      <summary>mBlock code</summary>
+    <img src="./img/arduino-block2.png"  height="100px"/>
+    </details>
+  </li>
+
+  <li>
+    Er zit geen tijd tussen het aan- en uitgaan!
+    <details>
+      <summary>mBlock code</summary>
+    <img src="./img/arduino-block3.png"  height="120px"/>
+    </details>
+  </li>
+
+  <li>
+    Nu wil je dit blijven herhalen.
+    <details>
+      <summary>mBlock code</summary>
+    <img src="./img/arduino-block4.png"  height="150px"/>
+    </details>
+  </li>
+  <li>Nu hebben we 1 led, kun jij een stoplicht maken?</li>
+</ol>
+
+### Een led laten knipperen soor een licht sensor
+
+<ol>
+  <li>
+    Maak het volgende circuit (met behulp van een breadboard). <br /><img
+      src="./img/photocell-arduino.jpg"
+      height="200px"
+    />
+  </li>
+
+  <li>
+    We kunnen nu de waarde van deze licht sensor uitlezen met het blok:
+    <img src="./img/analog-pin.png" height="50px"/>
+
+Let wel op: dit blok moet gecombineerd worden met een functie. Bijvoorbeeld 'groter dan' of 'kleiner dan'.
+
+  <img src="./img/bigger-smaller.png" height="75px"/>
+
+Kun jij nu met de licht sensor een led aan of uit zetten?
+
+  <details>
+    <summary>mBlock code</summary>
+    <img src="./img/compleet.png" height="250px"/>
+  </details>
+  </li>
+  <li>Nu hebben we 1 led, kun jij een stoplicht maken met 3 ledjes en 3 licht sensoren?</li>
+</ol>
 
 # Arduino code
