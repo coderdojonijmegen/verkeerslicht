@@ -135,7 +135,7 @@ Om een verkeerslicht te simuleren beginnen we met 1 led lampje en een arduino. V
   <li>Nu hebben we 1 led, kun jij een stoplicht maken?</li>
 </ol>
 
-### Een led laten knipperen soor een licht sensor
+### Een led laten knipperen door een licht sensor
 
 <ol>
   <li>
@@ -233,7 +233,7 @@ Weet jij nog hoe we een arduino pin kunnen configureren als `output`?
 Vergeet niet dat we instellingen in de `void setup()` functie plaatsen, zodat deze maar een keer uitgevoerd worden.
 
   <details>
-    <summary>mBlock code</summary>
+    <summary>Arduino code</summary>
 
 ```Arduino
 
@@ -255,7 +255,7 @@ void loop() {
  Nu hebben we een pin als output gedefinieert, kun jij hier een `HOOG` signaal naar toe sturen?
 
   <details>
-    <summary>mBlock code</summary>
+    <summary>Arduino code</summary>
 
 ```Arduino
 
@@ -279,7 +279,7 @@ void loop() {
 Het ledje staat nu aan, kun jij het uit zetten?
 
   <details>
-    <summary>mBlock code</summary>
+    <summary>Arduino code</summary>
 
 ```Arduino
 
@@ -304,7 +304,7 @@ void loop() {
 En heb je een idee hoe we het ledje kunnen laten knipperen?
 
   <details>
-    <summary>mBlock code</summary>
+    <summary>Arduino code</summary>
 
 ```Arduino
 
@@ -330,3 +330,85 @@ void loop() {
 </ol>
 
 Nu hebben we 1 led, kun jij een stoplicht maken met 3 ledjes ?
+
+### Een led laten knipperen door een licht sensor
+
+<ol>
+  <li>
+    Maak het volgende circuit (met behulp van een breadboard). <br /><img
+      src="./img/photocell-arduino.jpg"
+      height="200px"
+    />
+  </li>
+
+  <li>
+    We kunnen nu de waarde van deze licht sensor uitlezen met de functie:
+
+```Arduino
+//Geeft een getal terug tussen de 0 en 1023. (int)
+analogRead(pin);
+//Sla de waarde op in 'gelezenWaarde'
+int gelezenWaarde = analogRead(pin);
+```
+
+</li>
+
+<li>
+  
+  We voegen nu een `input` toe aan ons systeem, weet jij nog hoe we dit instellen?
+
+  <details>
+    <summary>Arduin Code</summary>
+
+```Arduino
+int groeneLedPin = 0;
+int lichtSensorPin = 1;
+
+void setup() {
+  pinMode(groeneLedPin, OUTPUT);
+  pinMode(lichtSensorPin, INPUT);
+}
+
+void loop() {
+
+}
+```
+
+  </details>
+
+</li>
+
+<li>
+
+Als de waarde van de lichtsensor nu hoger is dan bijvoorbeeld 500, kun jij dan de led uitzetten?
+
+  <details>
+    <summary>Code </summary>
+
+```Arduino
+int groeneLedPin = 0;
+int lichtSensorPin = 1;
+
+void setup() {
+  pinMode(groeneLedPin, OUTPUT);
+  pinMode(lichtSensorPin, INPUT);
+}
+
+void loop() {
+  int gelezenWaarde = analogRead(lichtSensorPin);
+
+  if (gelezenWaarde > 500)
+  {
+    digitalWrite(groeneLedPin, HIGH);
+  }
+  else
+  {
+    digitalWrite(groeneLedPin, LOW);
+  }
+}
+```
+
+  </details>
+  </li>
+  <li>Nu hebben we 1 led, kun jij een stoplicht maken met 3 ledjes en 3 licht sensoren?</li>
+</ol>
