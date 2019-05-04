@@ -50,13 +50,13 @@ Net als batterijen hebben LED lampjes een plus en een min. Als je goed kijkt zij
 
 ### Weerstand
 
-Een weerstand zet een deel van de stroom die er doorheen loopt om in warmte. Hiermee kun je bijvoorbeeld andere onderdelen in je circuit, bijvoorbeeld een LED, beschermen tegen te hoge spanningen. 
+Een weerstand zet een deel van de stroom die er doorheen loopt om in warmte. Hiermee kun je bijvoorbeeld andere onderdelen in je circuit, bijvoorbeeld een LED, beschermen tegen te hoge spanningen.
 
 <img src="./img/weerstand.png" height="50px" />
 
 ### Fotocel
 
-Een fotocel is een soort weerstand, met de speciale eigenschap dat de sterkte van de weerstand afhangt van hoeveel licht er op de fotocel valt. Deze hoeveelheid licht kun je meten met zowel de micro:bit als de Arduino. 
+Een fotocel is een soort weerstand, met de speciale eigenschap dat de sterkte van de weerstand afhangt van hoeveel licht er op de fotocel valt. Deze hoeveelheid licht kun je meten met zowel de micro:bit als de Arduino.
 
 <img src="./img/fotocel.png" height="50px" />
 
@@ -72,8 +72,9 @@ Een fotocel is een soort weerstand, met de speciale eigenschap dat de sterkte va
 
 - Sluit de micro:bit met de USB kabel aan op de computer
 - Maak een eerste programma: toon het hart-pictogram
-  
+
   <img src="./img/microbit-visueel-1-testprogramma.png" height="100px" />
+
 - Upload nu het programma naar de micro:bit
   - In Chrome kan dit via "WebUSB". Klik hiervoor eerst op het tandwiel rechtsboven -> Apparaat koppelen (2x) -> selecteer de micro:bit en klik op Verbinding maken. Als je nu op Downloaden klikt wordt de code meteen op de micro:bit gezet.
   - In andere browsers:
@@ -124,7 +125,8 @@ Een fotocel is een soort weerstand, met de speciale eigenschap dat de sterkte va
 
 ### De micro:bit knoppen gebruiken
 
-  Veel verkeerslichten reageren op de omgeving, bijvoorbeeld wanneer een auto tot de streep rijdt of een fietser op een knop drukt. Gebruik nu de micro:bit knoppen om het verkeerslicht op groen (of juist op rood) te laten springen. Je kunt hiervoor een `als ... dan ...` blok voor gebruiken.
+Veel verkeerslichten reageren op de omgeving, bijvoorbeeld wanneer een auto tot de streep rijdt of een fietser op een knop drukt. Gebruik nu de micro:bit knoppen om het verkeerslicht op groen (of juist op rood) te laten springen. Je kunt hiervoor een `als ... dan ...` blok voor gebruiken.
+
   <details>
     <summary>micro:bit code</summary>
     <img src="./img/microbit-block6.png"  height="200px"/>
@@ -148,15 +150,16 @@ De fotocel sluit je als volgt aan (in dit voorbeeld op pin 2):
   <img src="./img/fotocel-schema.png"  height="250px"/>
 
 Net als in het vorige voorbeeld heb je een vergelijking nodig, dit keer alleen niet met `lichtniveau` maar met de waarde van de pin waar je de sensor op hebt aangesloten.
+
 <details>
   <summary>micro:bit code</summary>
   <img src="./img/microbit-block7.png"  height="200px"/>
 </details>
 
-
 ## micro:bit Python code
 
 Je kunt op meerdere manieren Python code voor de micro:bit schrijven:
+
 - online op https://python.microbit.org/v/1.1
 - met [Mu](https://codewith.mu/)
 
@@ -179,6 +182,7 @@ Een overzicht van alle Python functies voor micro:bit vind je [hier](https://mic
 ```Python
 from microbit import *
 ```
+
   </li>
   <li>
     Schakel nu de LED in door de juiste output (pin) op <b><i>1</i></b> te zetten. Dit doe je door een functie van de pin 0 aan te roepen, namelijk <b><i>write_digital</i></b>
@@ -239,7 +243,8 @@ while True:
 
 ### De micro:bit knoppen gebruiken
 
-  Veel verkeerslichten reageren op de omgeving, bijvoorbeeld wanneer een auto tot de streep rijdt of een fietser op een knop drukt. Gebruik nu de micro:bit knoppen om het verkeerslicht op groen (of juist op rood) te laten springen. De toestand van knop A kun je uitlezen via pin 8: als de knop is ingedrukt geeft deze waarde 0, anders waarde 1. Met een als (<b><i> = if</i></b>) kun je deze controle doen.
+Veel verkeerslichten reageren op de omgeving, bijvoorbeeld wanneer een auto tot de streep rijdt of een fietser op een knop drukt. Gebruik nu de micro:bit knoppen om het verkeerslicht op groen (of juist op rood) te laten springen. De toestand van knop A kun je uitlezen via pin 8: als de knop is ingedrukt geeft deze waarde 0, anders waarde 1. Met een als (<b><i> = if</i></b>) kun je deze controle doen.
+
   <details>
     <summary>Python code</summary>
 
@@ -263,6 +268,7 @@ De fotocel sluit je als volgt aan (in dit voorbeeld op pin 2):
   <img src="./img/fotocel-schema.png"  height="250px"/>
 
 Net als in het vorige voorbeeld heb je een als nodig, alleen moet je dit keer de waarde van pin 2 uitlezen en vergelijken met een bepaalde waarde (zie de micro:bit visueel stap). Let op: je moet nu niet een <b><i>digitale (0 of 1)</b></i> waarde maar een <b><i>analoge</b></i> waarde uitlezen, hiervoor is weer een aparte functie.
+
 <details>
   <summary>micro:bit code</summary>
 
