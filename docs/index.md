@@ -84,12 +84,11 @@ Een fotocel is een soort weerstand, met de speciale eigenschap dat de sterkte va
 
 <ol>
   <li>
-    Maak het volgende circuit (met behulp van een breadboard). <br /><img
-      src="./img/Dragontail-schema.png"
-      height="250px"
-    />
+    Maak het volgende circuit (met behulp van een breadboard).<br /><br />
+    <img src="./img/Dragontail-schema.png" height="250px"/><br /><br />
+    Als je geen DragonTail hebt kun je dit schema maken, je hebt dan ook een paar krokodillenbekken nodig.<br /><br />
+    <img src="./img/microbit-verkeerslicht-schema.png" height="250px"/>
   </li>
-
   <li>
     Schakel nu de LED in door de juiste output (pin) op <b><i>1</i></b> te zetten.
   </li>
