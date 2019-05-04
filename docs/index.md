@@ -528,7 +528,7 @@ Nu hebben we 1 led, kun jij een stoplicht maken met 3 ledjes ?
 <ol>
   <li>
     Maak het volgende circuit (met behulp van een breadboard). <br /><img
-      src="./img/photocell-arduino.jpg"
+      src="./img/Photocell-arduino.jpg"
       height="200px"
     />
   </li>
